@@ -1,0 +1,17 @@
+Hi Duc,
+
+Congratulations! You have done a good job in the Take-home project 4 by answering all the questions.
+
+One thing you may want to note is to have a quick look at the dataset before you load it. 
+
+If the dataset has its first row for column names then you may want to set header = True.
+
+Also, in your github repositories, if possile include the dataset that you are using so whoever wants to review your project can have access to the dataset.
+
+Your score for the Take-home project 4 is 9 over 10. Howver, due to your late submission your final score is 7/10.
+
+Should you have any questions regarding the feedback, please let know.
+
+Thanks,
+
+Quynh
