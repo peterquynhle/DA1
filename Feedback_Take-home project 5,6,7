@@ -1,0 +1,45 @@
+@ -0,0 +1,13 @@
+Hi Duc,
+
+Cam on ban da hoan thanh Take-home project 5,6, and 7 va chia se quan diem cua minh ve Ethics trong DA.
+
+- Lien quan den Take-home project 5, ban da hoan thanh theo yeu cau. Rieng cau hoi cua ban ve "float", code co error la do ban dung nham type cua histogram. "float" la data type, not plot type.
+
+  Code trong cell "In[9]" can duoc viet lai nhu sau:
+  "titanic.Age.plot(kind='hist',histtype='step',bins=30)"
+
+  Score cua Take-home project 5 la 14/15. Tuy nhien, do nop bai muon, final score cua ban la 13/15.
+
+- Lien quan den Take-home project 6:ban da hoan thanh theo yeu cau. 
+  Rieng cau hoi cua ban ve "Từ đây đã kết luận được khoảng tin cậy chưa ạ?", cau tra loi la chua.
+  Ban can dua ra khoang tin cay cua ban la bao nhieu, simulate data roi tu do tinh khoang tin cay dua va quantiles:
+  Vi du:
+  # simulate data with 1000 sample ( or assume that the underline distribution of of the sample data is normal)
+  Code:
+  "def samplingdist(brown,n=1000):
+    return pd.DataFrame([sample(brown,n).vote.value_counts(normalize=True) for i in range(1000)])"
+   
+  # chon khoang tin cay la 95% tuong duong trong khoang quantile 0.025-0.975 bang cach define "quantiles" function nhu sau:
+  Code:
+  "def quantiles(brown,n=2000):
+    dist = samplingdist(brown,n)
+    return dist.Brown.quantile(0.025), dist.Brown.quantile(0.975)"
+  
+  # Sau do tim quantiles nao chua observed proportion, Brown 0.511,  ma ban thay trong data (cell "In [8]" trong notebook cua ban)
+   trong truong hop nay sau khi run quantiles 0.48 va 0.54 ban se thay no chua 0.511
+    Code:
+    "quantiles(0.48)
+    quantiles(0.48)"
+  Ket luan la voi sample size 1000 thi 95% Confidence internal cho true Brown population proportion nam trong khoang 0.48 den 0.54.
+  
+   Score cua Take-home project 6 la 17/20. Tuy nhien, do nop bai muon, final score cua ban la 15/20.
+
+- Lien quan den phan Caeer model cua  Take-home project 7, ban hoan toan co the bat dau Caeer model cua minh bang cach, vi du, xay dung Github, Tableau profiles khi con la sinh vien.
+
+Hy vong ban o the lien he voi noi dung da duoc trinh bay trong Week 8 va co duoc thong tin bo ich ve Ethics in DA cung nhu Career model.
+
+Score cua ban cho Take-home project 7 la 28/30. Tuy nhien, do nop bai muon, final score cua ban la 26/30.
+
+Cam on ban
+
+Quynh
